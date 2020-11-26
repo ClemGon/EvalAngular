@@ -4,6 +4,8 @@
     <p>class : {{ticket.class}}</p>
     <p>flight : {{ticket.flight}}</p>
     <p>passenger : {{ticket.passenger}}</p>
+    <button [routerLink]="['/billet', ticket.flight]" >Voir le billet</button>
     <hr>
   </div>
+
 </div>

@@ -24,4 +24,10 @@ public getTicketsForDestination(destination: string): Observable<ITicket[]>{
   return this.httpClient.get<ITicket[]>(ticketsUrl);
 }
 
+public getBilletByCode(flight: string): Observable<ITicket>{
+  let query = { where : { flight : flight}};
+  let strQuery = JSON.stringify(query);
+  let ticketsUrl = "https://travel-api.clicksomeone.com/tickets?filter="+encodeURI(strQuery);
+  return this.httpClient.get<ITicket>(ticketsUrl);
+}
 }

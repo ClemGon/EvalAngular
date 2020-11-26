@@ -7,13 +7,15 @@ import { LogoComponent } from './logo/logo.component';
 import ClickTravelService from './services/click-travel.service';
 import { HttpClientModule } from '@angular/common/http';
 import { TicketComponent } from './ticket/ticket.component';
+import { BilletComponent } from './billet/billet.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LogoComponent,
-    TicketComponent
+    TicketComponent,
+    BilletComponent
   ],
   imports: [
     BrowserModule,
