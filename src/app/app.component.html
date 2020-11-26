@@ -6,8 +6,9 @@
     <div>
       <h1 class="title">{{ title }}</h1>
       <div class="links" *ngFor="let clicktravel of clickTravels">
-        <a href="#" class="giant-button"> {{clicktravel.name}} </a>
+        <a [routerLink]="['/tickets', clicktravel.code]" class="giant-button"> {{clicktravel.name}} </a>
       </div>
     </div>
   </div>
+  <router-outlet></router-outlet>
 </div>
