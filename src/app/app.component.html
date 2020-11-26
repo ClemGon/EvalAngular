@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="toolbar">
+    <app-logo></app-logo>
+  </div>
+  <div class="content">
+    <div>
+      <h1 class="title">{{ title }}</h1>
+      <div class="links" *ngFor="let clicktravel of clickTravels">
+        <a href="#" class="giant-button"> {{clicktravel.name}} </a>
+      </div>
+    </div>
+  </div>
+</div>
